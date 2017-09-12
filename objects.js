@@ -10,7 +10,7 @@ function updatePlaylist(obj, artist, song){
 function removeFromPlaylist(obj, artist){
 
   var temp = Object.assign({},obj);
-  temp.Mastery = 'Songy'
+  delete temp.artist
   return temp
   //delete temp.artist
   //obj = temp
