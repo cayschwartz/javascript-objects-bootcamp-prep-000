@@ -8,6 +8,11 @@ function updatePlaylist(obj, artist, song){
 }
 
 function removeFromPlaylist(obj, artist){
-  delete obj.artist
+
+  var temp = Object.assign({},obj);
+  temp.Mastery('SONGY')
   return obj
+  //delete temp.artist
+  //obj = temp
+  //return obj
 }
